@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 import { render } from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'
@@ -7,6 +8,7 @@ import thunk from 'redux-thunk'
 import reducer from './reducers'
 import { getAllProducts } from './actions'
 import App from './containers/App'
+//import './components/chronograph.png'
 
 const middleware = [ thunk ];
 if (process.env.NODE_ENV !== 'production') {
@@ -21,7 +23,7 @@ const store = createStore(
 store.dispatch(getAllProducts())
 
 render(
-  <Provider store={store}>
+  <Provider store= {store}>
     <App />
   </Provider>,
   document.getElementById('root')

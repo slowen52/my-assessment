@@ -1,9 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
+//import './chronograph.png'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div style={{ marginBottom: 20 }}>
+  <div className='col' style={{ marginBottom: 20 }}>
     <Product
       title={product.title}
       price={product.price}
