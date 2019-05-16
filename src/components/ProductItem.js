@@ -11,15 +11,24 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
     }>
 <div  className = 'col-4 pl-0'>
     <img src = {product.title + '.png'} alt ="image" className = "img-fluid rounded-left"/> </div>
-    <div className = 'col'>
+    <div className = 'col justify-content-between'>
     <Product
       title={product.title}
       price = {product.price}
       inventory={product.inventory} />
     <button
       onClick={onAddToCartClicked}
-      disabled={product.inventory > 0 ? '' : 'disabled'}>
-      {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
+      disabled={product.inventory > 0 ? '' : 'disabled'} style = {{
+    height: '40px',
+    width:'120px',
+    background: '#5E97D1',
+    border: 'none',
+borderRadius: '100px',
+fontFamily: 'Chivo',
+fontSize: '14px',
+color:'#FFFFFF'
+    }} >
+      {product.inventory > 0 ? 'ADD TO CART' : 'Sold Out'}
     </button>
     </div>
   </div>
