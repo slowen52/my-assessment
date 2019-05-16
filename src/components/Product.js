@@ -8,7 +8,7 @@ const Product = ({ price, inventory, title}) =>
         <div className = "row justify-content-between p-4 pb-0">
             <div> 
             <h3 style = {{fontFamily: 'Chivo'}}> {title} </h3>
-        <p style ={{fontFamily: 'Helvetica Neue', color: '#9B9B9B',fontSize:'13'}}>{inventory ? `  ${inventory} REMAINING ` : null} </p> </div>
+        <p style ={{fontFamily: 'HelveticaNeue', color: '#9B9B9B',fontSize:'13'}}>{inventory ? `  ${inventory} REMAINING ` : null} </p> </div>
         <div>
             <h5 style = {{fontFamily: 'Chivo', fontWeight: '300'}}> &#36;{price} </h5> </div>
         </div>

@@ -23,10 +23,10 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
     width:'120px',
     background: '#5E97D1',
     border: 'none',
-borderRadius: '100px',
-fontFamily: 'Chivo',
-fontSize: '14px',
-color:'#FFFFFF'
+    borderRadius: '100px',
+    fontFamily: 'Chivo',
+    fontSize: '14px',
+    color:'#FFFFFF'
     }} >
       {product.inventory > 0 ? 'ADD TO CART' : 'Sold Out'}
     </button>
