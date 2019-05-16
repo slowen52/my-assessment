@@ -9,9 +9,9 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
     { marginBottom: 20, 
     backgroundColor: 'white'}
     }>
-<div  className = 'col-4 pl-0'>
+<div  className = 'col-md-4 pl-0'>
     <img src = {product.title + '.png'} alt ="image" className = "img-fluid rounded-left"/> </div>
-    <div className = 'col justify-content-between'>
+    <div className = 'col-md justify-content-between'>
     <Product
       title={product.title}
       price = {product.price}

@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react'
 import PropTypes from 'prop-types'
 import Product from './Product'
@@ -18,15 +19,27 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   )
 
   return (
-    <div>
-      <h3>Your Cart</h3>
+      <div className = "modal fade" id= "myModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div className="modal-dialog modal-dialog-centered" role="document">
+    <div className = "modal-content">
+      <div className= "modal-header"> 
+            <h3 className="modal-title">Your Cart</h3>
+            <button type="button" className ="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div className = "modal-body">
       <div>{nodes}</div>
       <p>Total: &#36;{total}</p>
+      </div>
+      <div className="modal-footer">
       <button onClick={onCheckoutClicked}
         disabled={hasProducts ? '' : 'disabled'}>
         Checkout
-      </button>
+      </button> </div>
     </div>
+    </div>
+      </div>
   )
 }
 
