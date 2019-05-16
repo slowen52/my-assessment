@@ -5,12 +5,16 @@ import PropTypes from 'prop-types'
 
 const Product = ({ price, inventory, title}) => 
     (
-    <div className = 'row'>
-    <div  className = 'col'>
-<img src = {title + '.png'} alt ="image" style={{height:200}}/> </div>
-    <div className = 'col'>
-    {title} - &#36;{price}{inventory ? `  ${inventory} items` : null} </div>
-  </div>
+        <div>
+        <div className = "row justify-content-between p-4 pb-0">
+            <div> 
+            <h3> {title} </h3>
+        {inventory ? `  '${inventory} items' ` : null} </div>
+        <div>
+            <h6 > {price} </h6> </div>
+        </div>
+        </div>
+
     )
 
 Product.propTypes = {

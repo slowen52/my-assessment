@@ -5,16 +5,23 @@ import Product from './Product'
 //import './chronograph.png'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
-  <div className='col' style={{ marginBottom: 20 }}>
+  <div className='row rounded' style={
+    { marginBottom: 20, 
+    backgroundColor: 'white'}
+    }>
+<div  className = 'col-4 pl-0'>
+    <img src = {product.title + '.png'} alt ="image" className = "img-fluid rounded-left"/> </div>
+    <div className = 'col'>
     <Product
       title={product.title}
-      price={product.price}
+      price = {product.price}
       inventory={product.inventory} />
     <button
       onClick={onAddToCartClicked}
       disabled={product.inventory > 0 ? '' : 'disabled'}>
       {product.inventory > 0 ? 'Add to cart' : 'Sold Out'}
     </button>
+    </div>
   </div>
 )
 
