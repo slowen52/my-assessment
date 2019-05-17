@@ -7,7 +7,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
     products.map(product =>
-      <Product
+<Product
         title={product.title}
         price={product.price}
         quantity={product.quantity}
@@ -23,7 +23,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
     <div className="modal-dialog modal-dialog-centered" role="document">
     <div className = "modal-content">
       <div className= "modal-header"> 
-            <h3 className="modal-title">Your Cart</h3>
+            <h3 className="modal-title" style = {{fontFamily: 'Chivo', fontWeight: '700'}}>Your Cart</h3>
             <button type="button" className ="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -46,7 +46,7 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
     <div className="modal-dialog modal-dialog-centered" role="document">
     <div className = "modal-content">
       <div className= "modal-header"> 
-            <h3 className="modal-title">Your Cart</h3>
+            <h3 className="modal-title" style = {{fontFamily: 'Chivo', fontWeight: '700'}}>Your Cart</h3>
             <button type="button" className ="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

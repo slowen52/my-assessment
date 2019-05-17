@@ -1,0 +1,12 @@
+.Button {
+     height: 40px;
+    width: 120px;
+    background: #5E97D1;
+    border: none;
+
+    color:#FFFFFF;    
+}
+
+.Button:hover {
+  background-color: aqua;
+}
