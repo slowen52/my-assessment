@@ -38,15 +38,15 @@ You're welcome (but not required) to add any libraries you think would be helpfu
 
 Please also update this README file: we'd love to see notes on your decision-making process, links to the most exciting pieces of code, or anything else that will give us additional context when reviewing your assessment.
 
-### My Notes
-##### Design choices
+## My Notes
+#### Design choices
 1. I used bootstrap because I am comfortable with the responsive grid of Bootstrap and thought it would be a pretty straightforward way for a responsive design
 2. I ran out of time to implement the buttons to change the quantity in the cart so I chose to display "Amount : " with the quantity.
 
-##### Code I am proud of
+#### Code I am proud of
 1. I used a boolean in product.js to display the image and quantity in the cart. 
 2. Figuring out how to return different modal views for the cart based on if there was items in the cart. Using if-else in Cart.js before the return () 
 
-##### Message
+#### Message
 I haven't built a fully functioning react app like this one before so I enjoyed learning about jsx and implementing responsive design. However, because of this I didn't have enough time to complete the design as well as I would have liked. Overall,I thought this was a really great learning experience and I appreciate the opportunity, thank you. 
 
