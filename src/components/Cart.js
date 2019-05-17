@@ -6,11 +6,13 @@ import Product from './Product'
 const Cart  = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
+      
     products.map(product =>
 <Product
         title={product.title}
         price={product.price}
         quantity={product.quantity}
+        isCart = {true}
         key={product.id}
       />
     )
@@ -30,13 +32,17 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
       </div>
       <div className = "modal-body">
       <div>{nodes}</div>
-      <p>Total: &#36;{total}</p>
       </div>
       <div className="modal-footer">
+      <div className = "container">
+      <div className = "row">
+      <div className = "col"> 
+        <h5>Total: &#36;{total}</h5></div>
+     
       <button onClick={onCheckoutClicked}
-        disabled={hasProducts ? '' : 'disabled'}>
+        disabled={hasProducts ? '' : 'disabled'} className = "col">
         Checkout
-      </button> </div>
+      </button> </div></div></div>  
     </div>
     </div>
       </div>
