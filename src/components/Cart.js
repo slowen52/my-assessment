@@ -34,13 +34,13 @@ const Cart  = ({ products, total, onCheckoutClicked }) => {
       <div>{nodes}</div>
       </div>
       <div className="modal-footer">
-      <div className = "container">
-      <div className = "row">
-      <div className = "col"> 
+      <div className = "container p-0">
+      <div className = "d-flex flex-column">
+      <div> 
         <h5>Total: &#36;{total}</h5></div>
      
       <button onClick={onCheckoutClicked}
-        disabled={hasProducts ? '' : 'disabled'} className = "col">
+        disabled={hasProducts ? '' : 'disabled'} className = "checkButton">
         Checkout
       </button> </div></div></div>  
     </div>

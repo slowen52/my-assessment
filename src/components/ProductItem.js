@@ -22,16 +22,7 @@ const ProductItem = ({ product, onAddToCartClicked }) => (
 //        onMouseEnter={() => setButtonHovered(true)} 
 //        onMouseLeave={() => setButtonHovered(false)}
       onClick={onAddToCartClicked}
-      disabled={product.inventory > 0 ? '' : 'disabled'} style = {{
-    height: '40px',
-    width:'120px',
-    background: '#5E97D1',
-    border: 'none',
-    borderRadius: '100px',
-    fontFamily: 'Chivo',
-    fontSize: '14px',
-    color:'#FFFFFF'                                                           
-    }} >
+      disabled={product.inventory > 0 ? '' : 'disabled'} className = "Button" >
       {product.inventory > 0 ? 'ADD TO CART' : 'Sold Out'}
     </button>
     </div>

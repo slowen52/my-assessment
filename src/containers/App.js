@@ -5,13 +5,12 @@ import CartContainer from './CartContainer'
 
 
 
-
 const App = () => (
   <div>
     <div className = "row pt-3 justify-content-between">
         <h2 className = "col-md " style = {{fontFamily: 'Chivo', fontWeight: '700'}}>Acme Store</h2>
-        <div className = "col-sm d-flex align-items-center justify-content-end">
-            <button data-toggle="modal" data-target="#myModal" className = "row ">
+        <div className = "col-sm d-flex align-items-center top">
+            <button data-toggle="modal" data-target="#myModal" className = "row seeCart">
     <div>
 <svg width='17' height='14' viewBox='0 0 17 14' xmlns='http://www.w3.org/2000/svg'>
     <g id='v2' fill='none' fillRule='evenodd'>

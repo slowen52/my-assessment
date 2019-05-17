@@ -14,11 +14,13 @@ const Product = ({ price, inventory, title, quantity, isCart}) =>
             <div> 
             <h3 style = {{fontFamily: 'Chivo'}}> {title} </h3>
         <p style ={{fontFamily: 'HelveticaNeue', color: '#9B9B9B',fontSize:'13'}}>{inventory ? `  ${inventory} REMAINING ` : null} </p> </div>
+
+<div> 
+            <h5 style = {{fontFamily: 'Chivo', fontWeight: '300'}}> &#36;{price} </h5> 
+</div>
         {isCart ?
         <h5> Amount: {quantity}</h5>
         : null}        
-<div> 
-            <h5 style = {{fontFamily: 'Chivo', fontWeight: '300'}}> &#36;{price} </h5> </div>
         </div>
 
 
